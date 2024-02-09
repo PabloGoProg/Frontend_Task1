@@ -1,0 +1,69 @@
+.landing-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.lading-presentation-screen,
+.lading-aboutus-screeen {
+  min-height: 100vh;
+  width: 100vw;
+}
+
+.lading-presentation-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.lading-presentation-button {
+  position: relative;
+  bottom: -25vh;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #f4f4f4;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.lading-presentation-tittle {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.lading-aboutus-screeen {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.lading-aboutus-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 10vw;
+  padding: 2rem;
+}
+
+.lading-aboutus-tittle {
+  text-align: left;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.lading-aboutus-form-button {
+  padding: 0.5rem 1rem;
+  margin-top: 0.8rem;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  background-color: #f4f4f4;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
