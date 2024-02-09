@@ -6,6 +6,7 @@
   <title>Page Title</title>
   <meta name='viewport' content='width=device-width, initial-scale=1'>
   <link rel='stylesheet' type='text/css' media='screen' href='/styles/global.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='/styles/characterForm.css'>
   <script src='index.js' defer></script>
 </head>
 <body>
@@ -19,7 +20,26 @@
     </nav>
   </header>
 
-  <main class="landing-content">
+  <main class="page-content">
+
+    <form class="page-content-form" action="">
+      <input type="text" placeholder="Cuál es tu nombre?">
+      <input type="number" placeholder=" Cuál es tu edad?">
+      <div>
+        <label for="genero">
+          Cuál es tu sexo?
+          
+          <input type="radio" name="genero" id="genero1" value="M">M
+          <input type="radio" name="genero" id="genero2" value="F">F
+        </label>
+      </div>
+      <select name="especie" id="especie">
+        <option disabled selected>- Elige tu especie -</option>
+        <option value="Humano">Humano</option>
+        <option value="Alien">Alien</option>
+      </select>
+    </form>
+
   </main>
 
   <footer>
