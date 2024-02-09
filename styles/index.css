@@ -19,7 +19,7 @@
 
 .lading-presentation-button {
   position: relative;
-  bottom: -25vh;
+  bottom: -20vh;
   margin-top: 1rem;
   padding: 0.5rem 1rem;
   border: none;
@@ -27,6 +27,12 @@
   background-color: #f4f4f4;
   cursor: pointer;
   transition: background-color 0.3s;
+}
+
+.lading-presentation-button:hover {
+  background-color: #35c9dd;
+  color: white;
+  scale: 1.1;
 }
 
 .lading-presentation-tittle {
