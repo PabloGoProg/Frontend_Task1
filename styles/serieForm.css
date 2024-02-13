@@ -1,0 +1,15 @@
+.main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items:center;
+}
+
+.serie-form {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 80%; 
+    max-width: 600px; 
+}
