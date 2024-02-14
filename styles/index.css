@@ -10,6 +10,9 @@
 }
 
 .lading-presentation-screen {
+  background-image: url("/images/rym_background.jpg");
+  background-size: cover;
+  background-position: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -19,31 +22,75 @@
 
 .lading-presentation-button {
   position: relative;
-  bottom: -20vh;
+  bottom: -25vh;
   margin-top: 1rem;
   padding: 0.5rem 1rem;
   border: none;
   border-radius: 5px;
-  background-color: #f4f4f4;
+  background-color: #727272;
+  color: white;
   cursor: pointer;
   transition: background-color 0.3s;
 }
 
-.lading-presentation-button:hover {
-  background-color: #35c9dd;
-  color: white;
-  scale: 1.1;
+.lading-presentation-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
 }
 
-.lading-presentation-tittle {
-  font-size: 2.4rem;
+.lading-presentation-button:hover, .lading-aboutus-form-button:hover {
+  background-color: #35c9dd;
+  color: white;
+  scale: 1.05;
+}
+
+.landing-page-authors {
+  color: white;
+}
+
+.landing-page-authors a,
+.landing-introduction-def a {
+  color: white;
+  text-decoration: none;
+}
+
+.lading-presentation-tittle,
+.landing-introduction-def-tittle,
+.landing-introduction-data-tittle,
+.lading-aboutus-tittle {
+  font-size: 2rem;
+  color: white;
   font-weight: 700;
   margin-bottom: 1rem;
 }
 
 .lading-aboutus-screeen {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr 1fr;
+  background: linear-gradient(180deg, #072C80, #000000);
+}
+
+.lading-aboutus-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.lading-aboutus-form-button,
+.landing-introduction-button {
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  background-color: #727272;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
 .lading-aboutus-description {
@@ -51,25 +98,85 @@
   flex-direction: column;
   justify-content: center;
   gap: 1rem;
-  margin-top: 10vw;
-  padding: 2rem;
+  padding: 0 2rem;
+  color: #E2E2E2;
+  border-bottom: #E2E2E2 1px;
 }
 
-.lading-aboutus-tittle {
-  text-align: left;
-  font-size: 2rem;
-  font-weight: 700;
-  margin-bottom: 0.5rem;
+.lading-aboutus-form-button:hover {
+  background-color: #555555;
 }
 
-.lading-aboutus-form-button {
-  padding: 0.5rem 1rem;
-  margin-top: 0.8rem;
-  width: 100%;
-  border: none;
+mark {
+  background-color: #727272;
+  padding: 0 3px;
+  color: white;
   border-radius: 5px;
-  background-color: #f4f4f4;
-  cursor: pointer;
-  transition: background-color 0.3s;
 }
 
+.lading-aboutus-image1, .lading-aboutus-image2 {
+  width: 23vw;
+  height: 23vw;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.lading-aboutus-image1 {
+  position: relative;
+  top: 20%;
+  left: 5vw; 
+  background: linear-gradient(310deg, #F3ED7B, #727272), url('/images/morty_landing.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: overlay;
+}
+
+.lading-aboutus-image2 {
+  position: relative;
+  top: 8vh;
+  left: 18vw;
+  background: linear-gradient(45deg, #35c9dd, #555555), url('/images/rick_landing.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: overlay; 
+}
+
+.landing-introduction-screen {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: linear-gradient(0deg, #072C80, #000000);
+  color: white;
+}
+
+.landing-introduction-def,
+.landing-introduction-data {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 14vh 0 ;
+  padding: 0 2rem;
+  color: #E2E2E2;
+}
+
+.landing-introduction-quote {
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  margin: 10px;
+}
+
+.landing-introduction-quote p {
+  font-size: 1.1rem;
+  font-style: italic;
+  color: #999;
+  margin: 0;
+}
+
+.landing-introduction-quote .author {
+  font-size: 1rem;
+  color: #777;
+  margin-top: 5px;
+  text-align: right;
+}

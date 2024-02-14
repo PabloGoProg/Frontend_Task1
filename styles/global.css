@@ -8,12 +8,13 @@
 }
 
 .header {
-  background: linear-gradient(270deg, #697a82, #1c3042);
+  background: linear-gradient(180deg, #000000, #323232);
   color: white;
   width: 100vw;
   z-index: 10;
   position: fixed;
   padding: 0 20px;
+  box-shadow: 10px;
   text-align: center;
 }
 
@@ -22,7 +23,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 5px;
-  background: linear-gradient(270deg, #697a82, #1c3042);
+  background: linear-gradient(180deg, #000000, #323232);
 }
 
 .header-logo {
