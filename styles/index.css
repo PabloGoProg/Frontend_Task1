@@ -10,6 +10,7 @@
 }
 
 .lading-presentation-screen {
+  background: linear-gradient(180deg, white, #99a5b3);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -29,7 +30,7 @@
   transition: background-color 0.3s;
 }
 
-.lading-presentation-button:hover {
+.lading-presentation-button:hover, .lading-aboutus-form-button:hover {
   background-color: #35c9dd;
   color: white;
   scale: 1.1;
@@ -43,7 +44,8 @@
 
 .lading-aboutus-screeen {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr 1fr;
+  background: linear-gradient(180deg, #99a5b3, #697a82);
 }
 
 .lading-aboutus-description {
@@ -51,9 +53,16 @@
   flex-direction: column;
   justify-content: center;
   gap: 1rem;
-  margin-top: 10vw;
   padding: 2rem;
+  margin: auto;
 }
+
+.lading-aboutus-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5vw;
+} 
 
 .lading-aboutus-tittle {
   text-align: left;
