@@ -20,29 +20,33 @@
     </nav>
   </header>
 
-  <main class="page-content">
-    <form class="page-content-form" action="">
-      <h2 class="form-title">Descubriendo tu personaje</h2>
-      <input type="text" placeholder="Cuál es tu nombre?">
-      <input type="number" placeholder=" Cuál es tu edad?">
-      <div>
-        <label for="genero">
-          Cuál es tu sexo?
-          
-          <input type="radio" name="genero" id="genero1" value="M">M
-          <input type="radio" name="genero" id="genero2" value="F">F
-        </label>
+  <main class="page-content-screen">
+    <section class="page-content">
+      <form class="page-content-form" action="">
+        <h2 class="form-title">Descubriendo tu personaje</h2>
+        <input type="text" placeholder="Cuál es tu nombre?">
+        <input type="number" placeholder=" Cuál es tu edad?">
+        <div>
+          <label class="gender-label" for="genero">
+            Cuál es tu sexo?
+            <div class="page-content-form-gender">
+              <input type="radio" name="genero" id="genero1" value="M"><label for="genero1">M</label>
+              <input type="radio" name="genero" id="genero2" value="F"><label for="genero2">F</label>
+            </div>
+          </label>
+        </div>
+        <select name="especie" id="especie">
+          <option disabled selected>- Elige tu especie -</option>
+          <option value="Humano">Humano</option>
+          <option value="Alien">Alien</option>
+        </select>
+        <button class="form-btn">Aceptar</button>
+      </form>
+
+      <div class="image-div">
+        <img src="images/rym_form.png" alt="">
       </div>
-      <select name="especie" id="especie">
-        <option disabled selected>- Elige tu especie -</option>
-        <option value="Humano">Humano</option>
-        <option value="Alien">Alien</option>
-      </select>
-      <button class="form-btn">Aceptar</button>
-    </form>
-    <div class="image-div">
-      <img src="./images/rick.png" alt="">
-    </div>
+    </section>
   </main>
 
   <footer>
