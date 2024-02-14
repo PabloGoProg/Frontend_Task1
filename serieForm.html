@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de fan</title>
+    <link rel="stylesheet" href="./styles/serieForm.css">
+</head>
+<body>
+    <main class="main-content">
+        <form class="serie-form" method="post" action="baseurl/...">
+            <input type="text" placeholder="Ingresa tu nombre">
+            <label for="nacimiento">Fecha de nacimiento</label>
+            <input id="nacimiento" type="date" value="2000-01-01" min="1950-01-01" max="2017-01-01" step="1">
+            <label for="calificacion">Del 1 al 5, ¿Qué tanto te gusta Rick and Morty?</label>
+            <input id="calificacion" type="range" value="1" min="1" max="5" step="1" oninput="this.nextElementSibling.value = this.value"> <output>1</output>
+            <label for="genero">¿Perteneces a la dimension c-137?</label>
+            <input type="radio" name="c-137" id="si" value="si">SI
+            <input type="radio" name="c-137" id="no" value="no">NO
+            <input type="radio" name="c-137" id="no_se" value="no_se">NO ESTOY SEGURO
+            <label for="color">Trata de encontrar el color azul más cercano al de Rick y Morty</label>
+            <input type="color" name="colorinput" id="colorinput" value="#000000">
+            <label for="wallpaper">Estamos recolectando wallpapers sobre Rick y Morty, ¿tienes alguno?</label>
+            <input type="file" name="wallpaper" id="wallpaper" accept="image/png">
+            <label for="fav">Cuéntanos por qué te gusta Rick and Morty</label>
+            <textarea name="fav" id="fav" cols="30" rows="10"></textarea>
+            <label for="personajes">¿Cuál es el nombre de tu personaje favorito?</label>
+            <input type="text" list="personajes" id="personaje">
+            <datalist id="personajes" >
+                <option value="Rick Sánchez"></option>
+                <option value="Morty Smith"></option>
+                <option value="Summer Smith"></option>
+                <option value="Jerry Smith"></option>
+                <option value="Beth Smith"></option>
+                <option value="Dr. Wong"></option>
+                <option value="Squanchy"></option>
+                <option value="Birdperson"></option>
+                <option value="Morty Jr"></option>
+                <option value="Mr. Goldenfold"></option>
+            </datalist>
+            
+        </form>
+    </main>
+</body>
+</html>
