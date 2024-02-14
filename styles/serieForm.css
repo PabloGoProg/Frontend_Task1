@@ -1,15 +1,110 @@
 .main-content {
     display: flex;
     flex-direction: column;
-    gap: 20px;
     align-items:center;
+    background: linear-gradient(180deg, #072C80, #000000);
+}
+
+.body-thanks{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(180deg, #072C80, #000000);
+}
+
+.main-thanks{
+    text-align: center;
+    color: #ffffff;
+}
+
+.body-thanks button{
+    width: auto;
+    margin: auto;    
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    border-color: #000000;
+    border: none;
+    background-color: rgb(240, 235, 235);
+    cursor: pointer;
+    transition: background-color 0.3s;
+    position: absolute;
+    bottom: 1rem; /* Puedes ajustar la distancia desde el borde inferior según sea necesario */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.body-thanks button:hover{
+    background-color: #35c9dd;
+    color: white;
+    scale: 1.1;
+}
+
+.logo{
+    margin-top: 30px;
+}
+
+.div-radio{
+    display: flex;
+    flex-direction: row;
+    margin-top: 7px;
+    margin-bottom: 10px;
+    gap: 2px;
+}
+
+.div-radio span{
+    margin-right:20px ;
 }
 
 .serie-form {
+    border-radius: 10px;
+    background-color: rgb(241, 241, 241);
+    padding: 30px;
     margin-top: 30px;
     display: flex;
     flex-direction: column;
     gap: 10px;
-    width: 80%; 
+    width: 50%; 
     max-width: 600px; 
+    margin-bottom: 30px;
+}
+
+.serie-form input{
+    margin-bottom: 30px;
+    padding: 10px;
+}
+
+.serie-form input[type=color]{
+    margin-bottom: 30px;
+    padding: 0;
+    cursor: pointer;
+}
+
+.serie-form input[type=range]{
+    padding: 0;
+    cursor: pointer;
+}
+
+.serie-form textarea{
+    margin-bottom: 30px;
+}
+
+.serie-form button{
+    width: 25%;
+    margin: auto;    
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    border-color: #000000;
+    border: none;
+    background-color: rgb(240, 235, 235);
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.serie-form button:hover{
+    background-color: #35c9dd;
+    color: white;
+    scale: 1.1;
 }
