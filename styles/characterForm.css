@@ -1,13 +1,12 @@
 .page-content {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 100vh;
   width: 100%;
 }
 
 .page-content-form,
 .image-div {
-  width: 35%;
   text-align: center;
 }
 
