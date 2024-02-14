@@ -1,0 +1,50 @@
+* {
+  max-width: 100vw;
+  max-height: 200vh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+
+.header {
+  background: linear-gradient(180deg, #000000, #323232);
+  color: white;
+  width: 100vw;
+  z-index: 10;
+  position: fixed;
+  padding: 0 20px;
+  box-shadow: 10px;
+  text-align: center;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  background: linear-gradient(180deg, #000000, #323232);
+}
+
+.header-logo {
+  scale: 0.9;
+}
+
+.nav-options {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-option a {
+  color: white;
+  text-decoration: none;
+  border-bottom: #35c9dd;
+}
+
+.nav-option a:hover {
+  font-weight: 2rem;
+  font-size: 1.1rem;
+  color: #35c9dd;
+  text-decoration: none;
+}
