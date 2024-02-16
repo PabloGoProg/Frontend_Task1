@@ -2,5 +2,122 @@
   min-height: 100vh;
   width: 100vw;
   display: grid;
-  grid-template-columns: repeat();
+  grid-template-columns: 70vw 30vw;
+  background: linear-gradient(110deg, #F3ED7B, #000000, #35c9dd);
+}
+
+.results-character, 
+.results-recommended-episodes {
+  margin: auto;
+  margin-top: 14vh;
+  height: 80%;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  background-color: #333;
+}
+
+.results-character {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 95%;
+}
+
+.results-character-data {
+  margin-top: 20%;
+}
+
+.results-character-tittle {
+  color: #35c9dd;
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+.results-recommended-episodes {
+  width: 90%;
+}
+
+.results-character-image {
+  margin: auto;
+  margin-top: 3vh;
+  width: 20vw; 
+  height: 35vh;
+  border-radius: 50%; 
+  background-image: url('/images/rym_character.jpeg');
+  background-size: cover; 
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  border: #35c9dd solid 5px;
+}
+
+.results-user-name {
+  color: white;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.results-character-name {
+  color: white;
+  opacity: 0.8;
+  text-align: center;
+  margin-top: 0.2rem;
+}
+
+.results-character-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  color: white;
+}
+
+.results-character-info-tittle {  
+  width: 100%;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #35c9dd;
+}
+
+.results-character-single-data {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 85%;
+}
+
+.results-character-single-data span {
+  font-size: 1.5rem;
+  font-weight: 700;;
+}
+
+.results-character-single-data p {
+  font-size: 1.5rem;
+  font-weight: 200;
+  opacity: 0.8;
+}
+
+.results-recommended-episodes {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.results-recommended-episodes-tittle {
+  color: #35c9dd;
+  text-align: center;
+  font-size: 1.3rem;
+  margin-top: 0.5rem;
+}
+
+.episode-recomendation {
+  width: 90%;
+  height: 27%;
+  background-image: url('/images/rym_episode.jpeg');
+  border-radius: 10px;
+  background-size: cover; 
+  background-position: center;
+  background-repeat: no-repeat;
 }
