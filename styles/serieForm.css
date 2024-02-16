@@ -5,6 +5,21 @@
     background: linear-gradient(180deg, #072C80, #000000);
 }
 
+
+.back-container {
+    position: absolute;
+    top: 0;
+    left:1rem;
+    display: flex;
+    align-items: center;
+}
+
+.back-img {
+    width: 3rem;
+    height: 3rem;
+    margin-top: 0.5rem;
+}
+
 .body-thanks{
     margin: 0;
     padding: 0;
@@ -69,6 +84,13 @@
     width: 50%; 
     max-width: 600px; 
     margin-bottom: 30px;
+}
+
+.serie-form h1{
+    margin: auto;
+    padding:1rem;
+    margin-bottom: 1.5rem;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .serie-form input{
